@@ -1,2 +1,38 @@
-# Diplomatparfume.uz
-✨ 𝐀𝐭𝐢𝐫 𝐭𝐚𝐧𝐥𝐚𝐦𝐚𝐲𝐬𝐢𝐳 𝐨‘𝐳𝐢𝐧𝐠𝐢𝐳𝐧𝐢 𝐭𝐚𝐧𝐥𝐚𝐲𝐬𝐢𝐳 🚫 𝐁𝐮𝐧𝐝𝐚𝐲 𝐬𝐞𝐫𝐯𝐢𝐬𝐧𝐢 𝐡𝐞𝐜𝐡 𝐤𝐢𝐦 𝐭𝐚𝐤𝐥𝐢𝐟 𝐪𝐢𝐥𝐦𝐚𝐠𝐚𝐧 🧠 𝐇𝐚𝐫 𝐛𝐢𝐫 𝐡𝐢𝐝 – 𝐬𝐢𝐳 𝐡𝐚𝐪𝐢𝐧𝐠𝐢𝐳𝐝𝐚 𝐠𝐚𝐩𝐢𝐫𝐚𝐝𝐢 💼 𝐔𝐳𝐛 𝐮𝐜𝐡𝐮𝐧 𝐩𝐫𝐞𝐦𝐢𝐮𝐦 𝐭𝐚𝐧𝐥𝐨𝐯
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return render_template("index.html")
+
+if __name__ == "__main__":
+    app.run()
+flask
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Diplomat Parfume</title>
+
+  <!-- Telegram Web App -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script>
+    Telegram.WebApp.ready();
+  </script>
+</head>
+<body>
+  <h1>Diplomat Parfume</h1>
+  <p>Premium original atirlar</p>
+
+  <button onclick="alert('Keyingi bosqichda ishlaymiz')">
+    Buyurtma berish
+  </button>
+</body>
+</html>
+git init
+git add .
+git commit -m "Initial MVP"
+git branch -M main
+git remote add origin https://github.com/USERNAME/diplomat-webapp.git
+git push -u origin main
